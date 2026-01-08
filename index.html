@@ -420,7 +420,7 @@
         }
 
         .team .section__description {
-            color: rgba(255, 255, 255, 0.85);
+            color: var(--color-primary);
         }
 
         .team__content {
@@ -440,7 +440,7 @@
             font-size: 2rem;
             font-weight: 800;
             margin-bottom: 0.5rem;
-            color: var(--color-primary);
+            color: var(--color-white);
             text-transform: uppercase;
         }
 
@@ -736,6 +736,26 @@
         .whatsapp-float:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        /* ========== MAP SECTION ========== */
+        .map {
+            padding: 0;
+            background-color: var(--color-white);
+        }
+
+        .map__container {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map__container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(100%) invert(92%) contrast(83%);
         }
 
         /* ========== RESPONSIVE ========== */
@@ -1115,8 +1135,7 @@
                     <img src="./equipocuomo.jpg" alt="Dr. Pascual Cuomo y Dra. Solana Cuomo">
                 </div>
                 <div class="team__info">
-                    <h3>Estudio Familiar</h3>
-                    <h4>Dr. Pascual Cuomo & Dra. Solana Cuomo</h4>
+                    <h3>Dr. Pascual Cuomo & <br>Dra. Solana Cuomo</h3>
                     <p>
                         Un equipo padre-hija que combina la experiencia de más de 30 años del Dr. Pascual Cuomo 
                         con la visión renovada y actualizada de la Dra. Solana Cuomo.
@@ -1169,7 +1188,7 @@
                         </div>
                         <div class="contact-item__content">
                             <h4>Email</h4>
-                            <p><a href="mailto:estudiocuomo@hotmail.com">estudiocuomo@hotmail.com</a></p>
+                            <p><a href="/cdn-cgi/l/email-protection#aacfd9dedfcec3c5c9dfc5c7c5eac2c5dec7cbc3c684c9c5c7"><span class="__cf_email__" data-cfemail="acc9dfd8d9c8c5c3cfd9c3c1c3ecc4c3d8c1cdc5c082cfc3c1">[email&#160;protected]</span></a></p>
                         </div>
                     </div>
 
@@ -1225,6 +1244,17 @@
         </div>
     </section>
 
+    <!-- MAP SECTION -->
+    <section class="map">
+        <div class="map__container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2891842637514!2d-65.21046892378564!3d-26.836449876699287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0e8d0e76b5%3A0x5c4b8f5e3e4a3f4e!2sPje.%202%20de%20Abril%20380%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1673000000000!5m2!1ses!2sar&style=feature:all|element:geometry|color:0x242f3e&style=feature:all|element:labels.text.stroke|color:0x242f3e&style=feature:all|element:labels.text.fill|color:0x746855&style=feature:administrative.locality|element:labels.text.fill|color:0xd59563&style=feature:poi|element:labels.text.fill|color:0xd59563&style=feature:poi.park|element:geometry|color:0x263c3f&style=feature:poi.park|element:labels.text.fill|color:0x6b9a76&style=feature:road|element:geometry|color:0x38414e&style=feature:road|element:geometry.stroke|color:0x212a37&style=feature:road|element:labels.text.fill|color:0x9ca5b3&style=feature:road.highway|element:geometry|color:0x746855&style=feature:road.highway|element:geometry.stroke|color:0x1f2835&style=feature:road.highway|element:labels.text.fill|color:0xf3d19c&style=feature:transit|element:geometry|color:0x2f3948&style=feature:transit.station|element:labels.text.fill|color:0xd59563&style=feature:water|element:geometry|color:0x17263c&style=feature:water|element:labels.text.fill|color:0x515c6d&style=feature:water|element:labels.text.stroke|color:0x17263c" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
@@ -1258,7 +1288,7 @@
                     <ul class="footer__links">
                         <li><a href="tel:+5493816400746">0381-6400746</a></li>
                         <li><a href="tel:+5493814660362">0381-4660362</a></li>
-                        <li><a href="mailto:estudiocuomo@hotmail.com">estudiocuomo@hotmail.com</a></li>
+                        <li><a href="/cdn-cgi/l/email-protection#fe9b8d8a8b9a97919d8b919391be96918a939f9792d09d9193"><span class="__cf_email__" data-cfemail="2346505756474a4c40564c4e4c634b4c574e424a4f0d404c4e">[email&#160;protected]</span></a></li>
                         <li>San Miguel de Tucumán</li>
                     </ul>
                 </div>
@@ -1276,7 +1306,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Header scroll effect
         const header = document.getElementById('header');
         const whatsappFloat = document.getElementById('whatsapp-float');
